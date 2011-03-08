@@ -6,6 +6,10 @@ dependencies {
 
 defaultTasks 'hello'
 
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.0-milestone-1'
+}
+
 task hello(dependsOn: 'classes', type: JavaExec) {
     main = 'com.bluepapa32.Main'
     classpath = sourceSets.main.runtimeClasspath

@@ -1,1 +1,13 @@
-Sample for Gradle Wrapper.
+Gradle Wrapper samle.
+
+
+You can execute the following commands, even if you don't install Gradle. 
+
+-----------------------------------------------------------------------------
+
+$ git clone git@github.com:bluepapa32/gradle-wrapper-sample.git
+$ cd gradle-wrapper-sample
+$ ./gradlew -q
+Hello, world!
+
+-----------------------------------------------------------------------------

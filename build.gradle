@@ -1,0 +1,14 @@
+apply plugin: 'groovy'
+
+dependencies {
+    groovy localGroovy()
+}
+
+defaultTasks 'hello'
+
+task hello(dependsOn: 'classes', type: JavaExec) {
+    main = 'com.bluepapa32.Main'
+    classpath = sourceSets.main.runtimeClasspath
+    args 'world'
+}
+
